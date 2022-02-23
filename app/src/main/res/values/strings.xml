@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MarvelShop</string>
+
+    <string-array name="shirts_title">
+        <item>Camiseta Marvel</item>
+        <item>Camiseta Marvel Super</item>
+        <item>Camiseta Vingadores</item>
+        <item>Camiseta Capitão América</item>
+        <item>Camiseta Hulk</item>
+        <item>Camiseta Homem de Ferro</item>
+        <item>Camiseta Homem-Aranha</item>
+        <item>Camiseta Viúva Negra</item>
+    </string-array>
+
+    <string-array name="shirts_image">
+        <item>@drawable/marvel_tshirt</item>
+        <item>@drawable/marvel2_tshirt</item>
+        <item>@drawable/avengers_tshirt</item>
+        <item>@drawable/captain_american_tshirt</item>
+        <item>@drawable/hulk_tshirt</item>
+        <item>@drawable/ironman_tshirt</item>
+        <item>@drawable/spiderman_tshirt</item>
+        <item>@drawable/window_black_tshirt</item>
+    </string-array>
+
+    <string-array name="shirts_price">
+        <item>R$ 20,00</item>
+        <item>R$ 25,00</item>
+        <item>R$ 30,00</item>
+        <item>R$ 35,00</item>
+        <item>R$ 25,00</item>
+        <item>R$ 30,00</item>
+        <item>R$ 35,00</item>
+        <item>R$ 35,00</item>
+    </string-array>
+</resources>
