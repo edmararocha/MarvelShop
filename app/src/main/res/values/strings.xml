@@ -2,14 +2,14 @@
     <string name="app_name">MarvelShop</string>
 
     <string-array name="shirts_title">
-        <item>Camiseta Marvel</item>
-        <item>Camiseta Marvel Super</item>
-        <item>Camiseta Vingadores</item>
-        <item>Camiseta Capitão América</item>
-        <item>Camiseta Hulk</item>
-        <item>Camiseta Homem de Ferro</item>
-        <item>Camiseta Homem-Aranha</item>
-        <item>Camiseta Viúva Negra</item>
+        <item>Marvel Simples</item>
+        <item>Marvel Heroes</item>
+        <item>Vingadores</item>
+        <item>Capitão América</item>
+        <item>Hulk</item>
+        <item>Homem de Ferro</item>
+        <item>Homem-Aranha</item>
+        <item>Viúva Negra</item>
     </string-array>
 
     <string-array name="shirts_image">
@@ -21,6 +21,17 @@
         <item>@drawable/ironman_tshirt</item>
         <item>@drawable/spiderman_tshirt</item>
         <item>@drawable/window_black_tshirt</item>
+    </string-array>
+
+    <string-array name="shirts_info">
+        <item>Camiseta</item>
+        <item>Camiseta</item>
+        <item>Camiseta</item>
+        <item>Camiseta</item>
+        <item>Camiseta</item>
+        <item>Camiseta</item>
+        <item>Camiseta</item>
+        <item>Camiseta</item>
     </string-array>
 
     <string-array name="shirts_price">

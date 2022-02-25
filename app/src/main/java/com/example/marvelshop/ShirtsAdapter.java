@@ -1,6 +1,7 @@
 package com.example.marvelshop;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,8 +36,11 @@ public class ShirtsAdapter extends RecyclerView.Adapter<ShirtsAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(ShirtsAdapter.ViewHolder holder, int position) {
-        Shirt currentShirt = mShirtsData.get(position);
-        holder.bindTo(currentShirt);
+
+        holder.mTitleView.setText(mShirtsData.get(position).getTitle());
+        holder.mInfoView.setText(mShirtsData.get(position).getInfo());
+        holder.mPriceView.setText(mShirtsData.get(position).getPrice());
+        holder.mImageView.setImageResource(mShirtsData.get(position).getImageResource());
     }
 
     @Override
@@ -44,10 +48,12 @@ public class ShirtsAdapter extends RecyclerView.Adapter<ShirtsAdapter.ViewHolder
         return mShirtsData.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         private TextView mTitleView;
         private TextView mInfoView;
+        private TextView mPriceView;
+        private ImageView mImageView;
 
 
         public ViewHolder(View itemView) {
@@ -55,22 +61,8 @@ public class ShirtsAdapter extends RecyclerView.Adapter<ShirtsAdapter.ViewHolder
 
             mTitleView = itemView.findViewById(R.id.title);
             mInfoView = itemView.findViewById(R.id.description);
-            mShirtsImage = itemView.findViewById(R.id.shirtsImage);
-
-//            itemView.setOnClickListener(this);
-        }
-
-        public void bindTo(Shirt currentShirt) {
-            mTitleView.setText(currentShirt.getTitle());
-            mInfoView.setText(currentShirt.getInfo());
-
-            Glide.with(mContext).load(currentShirt.getImageResource()).into(mShirtsImage);
-
-        }
-
-        @Override
-        public void onClick(View view) {
-            Shirt currentShirt = mShirtsData.get(getAdapterPosition());
+            mPriceView = itemView.findViewById(R.id.price);
+            mImageView = itemView.findViewById(R.id.shirtsImage);
         }
     }
 }
