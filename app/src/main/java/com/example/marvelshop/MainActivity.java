@@ -2,14 +2,14 @@ package com.example.marvelshop;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.res.TypedArray;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toolbar;
+import android.widget.Button;
+
+import androidx.appcompat.widget.Toolbar;
 
 import java.util.ArrayList;
 
@@ -18,15 +18,19 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private ArrayList<Shirt> mShirtsData;
     private ShirtsAdapter mAdapter;
+    private Toolbar mToolbar;
+    private Button mButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
+        mToolbar = findViewById(R.id.toolbar);
 
-//        setToolbar(myToolbar);
+        setSupportActionBar(mToolbar);
+
+        mButton = findViewById(R.id.buy_button);
 
         mRecyclerView = findViewById(R.id.recyclerView);
 
