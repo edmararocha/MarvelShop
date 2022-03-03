@@ -53,4 +53,8 @@
         <item>GG</item>
         <item>XG</item>
     </string-array>
+    
+    <string name="home">Home</string>
+    <string name="about">Sobre</string>
+    <string name="contact">Contato</string>
 </resources>

@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/gfx/AndroidStudioProjects/MarvelShop/app/src/main/res/layout/activity_detail_shirt.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Edmara/AndroidStudioProjects/MarvelShop/app/src/main/res/drawable/ic_about.xml" value="0.1425" />
+        <entry key="..\:/Users/Edmara/AndroidStudioProjects/MarvelShop/app/src/main/res/drawable/ic_contact.xml" value="0.1425" />
+        <entry key="..\:/Users/Edmara/AndroidStudioProjects/MarvelShop/app/src/main/res/drawable/ic_home.xml" value="0.1425" />
+        <entry key="..\:/Users/Edmara/AndroidStudioProjects/MarvelShop/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Edmara/AndroidStudioProjects/MarvelShop/app/src/main/res/menu/men.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/gfx/AndroidStudioProjects/MarvelShop/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/gfx/AndroidStudioProjects/MarvelShop/app/src/main/res/layout/shirt_item.xml" value="0.33" />
+        <entry key="..\:/Users/gfx/AndroidStudioProjects/MarvelShop/app/src/main/res/layout/shirt_item.xml" value="0.4224137931034483" />
       </map>
     </option>
   </component>

@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="8dp"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -22,10 +21,20 @@
         app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
         app:titleTextColor="@color/white" />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/red_pigment"
+        app:menu="@menu/menu" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="534dp"
         android:layout_row="0"
         android:layout_column="0"
         android:layout_marginTop="70dp"
