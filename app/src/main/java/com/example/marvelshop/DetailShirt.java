@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -30,25 +31,28 @@ public class DetailShirt extends AppCompatActivity implements AdapterView.OnItem
 
         Glide.with(this).load(getIntent().getIntExtra("image", 0)).into(shirtsImage);
 
-        Spinner spinner = findViewById(R.id.spinner);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.labels_array, android.R.layout.simple_spinner_item);
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        spinner.setAdapter(adapter);
+
         if (spinner != null) {
             spinner.setOnItemSelectedListener(this);
         }
-
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.labels_array, android.R.layout.simple_spinner_item);
-
-        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-
-        if (spinner != null) {
-            spinner.setAdapter(adapter);
-        }
     }
 
     @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
-    }
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) { }
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) { }
+
+    public void buy (View view) {
+        Toast.makeText(this, "In progress", Toast.LENGTH_SHORT).show();
+    }
+
 }

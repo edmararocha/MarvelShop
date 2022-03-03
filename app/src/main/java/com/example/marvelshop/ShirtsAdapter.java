@@ -24,7 +24,7 @@ public class ShirtsAdapter extends RecyclerView.Adapter<ShirtsAdapter.ViewHolder
     private ArrayList<Shirt> mShirtsData;
     private Context mContext;
 
-    ShirtsAdapter( Context context, ArrayList<Shirt> shirtsData) {
+    ShirtsAdapter(Context context, ArrayList<Shirt> shirtsData) {
         super();
         this.mShirtsData = shirtsData;
         this.mContext = context;
@@ -56,6 +56,7 @@ public class ShirtsAdapter extends RecyclerView.Adapter<ShirtsAdapter.ViewHolder
         private TextView mInfoView;
         private TextView mPriceView;
         private ImageView mImageView;
+        private Button mButton;
 
 
         public ViewHolder(View itemView) {
@@ -67,12 +68,15 @@ public class ShirtsAdapter extends RecyclerView.Adapter<ShirtsAdapter.ViewHolder
             mInfoView = itemView.findViewById(R.id.description);
             mPriceView = itemView.findViewById(R.id.price);
             mImageView = itemView.findViewById(R.id.shirtsImage);
+            mButton = itemView.findViewById(R.id.card_buy_button);
+
+            mButton.setOnClickListener(this);
         }
 
         public void onClick(View itemView) {
             Shirt currentShirt = mShirtsData.get(getAdapterPosition());
 
-            Intent detailIntent =new Intent(mContext, DetailShirt.class);
+            Intent detailIntent = new Intent(mContext, DetailShirt.class);
 
             detailIntent.putExtra("title", currentShirt.getTitle());
             detailIntent.putExtra("info", currentShirt.getInfo());

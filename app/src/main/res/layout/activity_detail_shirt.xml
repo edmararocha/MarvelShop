@@ -56,13 +56,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/shirtsImage"
-        android:layout_alignEnd="@+id/total"
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="141dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="20dp"
         android:padding="8dp"
-        android:text="Tamanho: "
+        android:text="Tamanho:"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:textColor="@color/yellow_orange"
         android:textSize="24sp" />
@@ -109,18 +108,18 @@
         android:text="Comprar"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/white"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="buy"/>
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tamanho_label"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="182dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/shirtsImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="178dp" />
+        android:layout_marginEnd="100dp"
+        android:layout_toEndOf="@+id/tamanho_label" />
 
 </RelativeLayout>

@@ -53,8 +53,12 @@
         <item>GG</item>
         <item>XG</item>
     </string-array>
-    
+
     <string name="home">Home</string>
     <string name="about">Sobre</string>
     <string name="contact">Contato</string>
+
+    <string name="about_textview"><b>As melhores blusas da marvel você encontra aqui!</b>
+        \n\nEndereço: Rua Sem Saída, n° 00 - Avangers.
+    </string>
 </resources>
