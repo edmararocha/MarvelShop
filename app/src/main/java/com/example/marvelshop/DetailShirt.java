@@ -1,5 +1,6 @@
 package com.example.marvelshop;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import androidx.appcompat.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
 
@@ -24,6 +26,13 @@ public class DetailShirt extends AppCompatActivity implements AdapterView.OnItem
         TextView shirtsInfo = findViewById(R.id.description);
         TextView shirtsPrice = findViewById(R.id.price);
         ImageView shirtsImage = findViewById(R.id.shirtsImage);
+
+        Toolbar mToolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
+
+        ActionBar ab = getSupportActionBar();
+
+        ab.setDisplayHomeAsUpEnabled(true);
 
         shirtsTitle.setText(getIntent().getStringExtra("title"));
         shirtsInfo.setText(getIntent().getStringExtra("info"));
