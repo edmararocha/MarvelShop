@@ -29,8 +29,8 @@ public class Contact extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.home:
                         startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                        overridePendingTransition(0, 0);
                         finish();
+                        overridePendingTransition(0, 0);
                         return true;
 
                     case R.id.about:

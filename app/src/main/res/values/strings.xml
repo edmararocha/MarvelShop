@@ -61,4 +61,10 @@
     <string name="about_textview"><b>As melhores blusas da marvel você encontra aqui!</b>
         \n\nEndereço: Rua Sem Saída, n° 00 - Avangers.
     </string>
+
+    <string name="contact_textview"><b>Entre em contato por:</b>
+        \n\n\n<b>Email:</b> marvelshop@gmail.com
+        \n\n<b>Whatsapp:</b> (85) 99999-9999
+        \n\n<b>Instagram:</b> @marvelshop_
+    </string>
 </resources>
